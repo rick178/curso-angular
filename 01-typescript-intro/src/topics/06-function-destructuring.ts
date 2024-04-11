@@ -20,13 +20,14 @@ interface TaxCalculationOptions{
 }
 export function taxCalculation(options: TaxCalculationOptions): number[]{
 
+    const { tax, products } = options;
     let total = 0;
 
-    options.products.forEach ( product => {
+    products.forEach ( product => {
         total += product.price;
     })
 
-    return [total, total * options.tax];
+    return [total, total * tax];
 }
 
 const shoppingCart = [phone, tablet];
