@@ -8,6 +8,6 @@ import { count } from 'rxjs';
 })
 export class AppComponent {
 
-  public title: string = 'Mi primera app de Angular';
+  public title: string = 'Mi primera app en Angular';
 
 }
